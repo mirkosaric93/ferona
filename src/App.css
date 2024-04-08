@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.headBtn {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00000070;
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+}
+.headBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00000090;
+  transition: width 0.3s;
+}
+.headBtn:hover::before {
+  width: 100%;
+}
+.headBtn:hover {
+  transition: ease-in-out 0.4s;
+  color: #131313;
+}
+.navBar {
+  width: 100vw;
+  height: 20vh;
+  background: linear-gradient(
+    0deg,
+    rgb(226, 226, 226) 0%,
+    rgba(140, 140, 140, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.navLogo {
+  width: 8rem;
+  height: 100%;
+  filter: drop-shadow(5px 5px 10px black);
+  padding: 5px;
+}
+.rightSideNav {
+  display: flex;
+  /* display: none; */
+  justify-content: space-evenly;
+}
+.hamburgerMenu {
+  display: none; /*Napraviti za display block*/
+  cursor: pointer;
+  font-size: 2.5rem;
+  filter: drop-shadow(1px 1px 3px black);
+  padding-right: 1rem;
+}
+.hamburgerMenu p {
+  font-size: 1rem;
+}
+.openedHamburger {
+  display: none; /*Napraviti za display block*/
+  /* display: flex; */
+  position: absolute;
+  flex-direction: column;
+  right: 5%;
+  top: 7%;
+  z-index: 2;
+  background-color: rgba(226, 226, 226, 0.8);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem 0.2rem 1rem 1rem;
+}
+.hamburgerBtn {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+}
+.hamburgerBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00000090;
+  transition: width 0.3s;
+}
+.hamburgerBtn:hover::before {
+  width: 100%;
+}
+.languageNav {
+  margin: auto;
+  position: relative;
+}
+.languageLogo {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0.2rem;
+  opacity: 0.3;
+}
+.languageLogo:hover {
+  opacity: 0.9;
+}
+.coverImages {
+  background: rgb(226, 226, 226);
+  position: relative;
+}
+.coverImage {
+  width: 100vw;
+  height: 80vh;
+  border: 0.8rem solid rgb(226, 226, 226);
+  border-radius: 2rem;
+  opacity: 0.7;
+}
+.homeText {
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+  padding: 2rem;
+  background-color: rgba(226, 226, 226, 0.3);
+  line-height: 1.5;
+}
+.activeLanguage {
+  opacity: 0.9;
+  box-shadow: 0 -3px 5px white;
+}
+.centralLogo {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  animation: shineAnimation 5s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes shineAnimation {
+  0% {
+    filter: drop-shadow(-2px -2px 20px grey);
+  }
+  50% {
+    filter: drop-shadow(2px -2px 15px white);
+  }
+  100% {
+    filter: drop-shadow(-2px -2px 20px grey);
+  }
+}
+.splitLine {
+  width: 80vw;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+}
+.footer {
+  background: rgb(226, 226, 226);
+  text-align: center;
+}
+.footer p {
+  padding: 1rem;
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 1px black);
+}
+.contactMail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.contactMail button {
+  border: none;
+  border-radius: 5px;
+  background: none;
+  filter: drop-shadow(1px 1px 1px black);
+}
+.mailBtn {
+  text-decoration: none;
+  color: black;
+  font-size: 0.6rem;
+}
+.galeryContainer {
+  background: rgb(226, 226, 226);
+}
+.galeryImages {
+  background: rgb(226, 226, 226);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+}
+.galeryImage {
+  width: 100%;
+  height: 80vh;
+  border: 0.8rem solid rgb(226, 226, 226);
+  border-radius: 2rem;
+}
+.galeryNoneImage {
+  display: none;
+}
+.arrowBtn {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 2rem;
+  font-size: 2rem;
+  height: 100%;
+  background: linear-gradient(
+    transparent 0,
+    #ffffff30 25%,
+    #00000080 50%,
+    #ffffff30 75%,
+    transparent 100%
+  );
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.arrowBtn:hover {
+  font-size: 2.2rem;
+  transition: all 0.2s ease-in;
+  color: black;
+  filter: drop-shadow(3px 3px 5px white);
+}
+#leftBtn {
+  left: 0;
+}
+#rightBtn {
+  right: 0;
+}
+.contactContainer {
+  background-color: rgb(226, 226, 226);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3rem;
+  height: 80vh;
+}
+.ownerContact {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ownerContact div {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.ownerContact div a {
+  text-decoration: none;
+  color: #00000070;
+  transition: all 0.3s ease;
+}
+.ownerContact div a:hover {
+  color: #131313;
+  border-bottom: 1px solid #131313;
+}
+.map {
+  border: 3px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.map p {
+  text-align: center;
+}
+.closeMenu {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.dotContainer {
+  /* background-color: rgb(226, 226, 226); */
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #00000095;
+  margin: 0.5rem;
+  filter: drop-shadow(2px 0px 8px black);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.activeDot {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin: 0.4rem;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+.hamburgerContainer {
+  display: none;
+}
+.title {
+  text-align: center;
+  background-color: rgb(226, 226, 226);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00000020;
+}
+@media screen and (max-width: 680px) {
+  .rightSideNav {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .coverImages {
+    height: 80vh;
+  }
+  .coverImage {
+    height: 40vh;
+  }
+  .centralLogo {
+    height: 30%;
+    top: 5%;
+  }
+  .homeText {
+    bottom: 20%;
+    font-size: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.675);
+    border: 2px solid #131313;
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  .galeryContainer {
+    height: 80vh;
+    background-color: rgb(226, 226, 226);
+  }
+  .galeryImages {
+    width: 100vw;
+    position: relative;
+  }
+  .galeryImage {
+    width: 100vw;
+    height: 50vh;
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+  }
+  .splitLine {
+    display: none;
+  }
+  .hamburgerContainer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .languageNav {
+    display: flex;
+    flex-direction: row;
+  }
+}
