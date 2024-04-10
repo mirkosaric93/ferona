@@ -47,7 +47,7 @@ function NavBar({
           {language.home}
         </ButtonNav>
         <ButtonNav styleName="headBtn" handleBtn={handleGaleryBtn}>
-          {language.galery}
+          {language.gallery}
         </ButtonNav>
         <ButtonNav styleName="headBtn" handleBtn={handleContactBtn}>
           {language.contact}
@@ -138,6 +138,7 @@ NavBar.propTypes = {
   language: PropTypes.object,
   setLanguage: PropTypes.func,
   handleCloseMenu: PropTypes.func,
+  handleOpacity: PropTypes.func,
 };
 
 export default NavBar;

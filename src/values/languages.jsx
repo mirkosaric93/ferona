@@ -12,12 +12,13 @@ const languages = {
       </p>
     ),
     home: "Početna",
-    galery: "Galerija",
+    gallery: "Galerija",
     contact: "Kontakt",
     phone: "Telefon",
     name: "Ferona Apartman",
     map: "Pronadjite nas lakše na mapi.",
     menu: "Meni",
+    street: "Bulevar Patrijarha Pavla 49",
   },
   eng: {
     text: (
@@ -33,12 +34,13 @@ const languages = {
       </p>
     ),
     home: "Home",
-    galery: "Galery",
+    gallery: "Gallery",
     contact: "Contact",
     phone: "Phone",
     name: "Ferona Apartment",
     map: "Find us easily on the map.",
     menu: "Menu",
+    street: "Boulevard Patrijarha Pavla 49",
   },
 };
 export default languages;

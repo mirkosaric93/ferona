@@ -7,7 +7,10 @@ function HomeImage({ language, handleCloseMenu }) {
   return (
     <>
       <p className="title">{language.home}</p>
-      <div className="coverImages" onClick={handleCloseMenu}>
+      <div
+        className="coverImages"
+        onClick={handleCloseMenu}
+      >
         <Image img={logo} alt="Central Logo" styledClass="centralLogo" />
         <Image img={ferona} alt="Image Slider 1" styledClass="coverImage" />
 
