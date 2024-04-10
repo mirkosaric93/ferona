@@ -121,7 +121,7 @@ function NavBar({
           {language.home}
         </ButtonNav>
         <ButtonNav styleName="hamburgerBtn" handleBtn={handleGaleryBtn}>
-          {language.galery}
+          {language.gallery}
         </ButtonNav>
         <ButtonNav styleName="hamburgerBtn" handleBtn={handleContactBtn}>
           {language.contact}
