@@ -330,6 +330,17 @@
   padding: 15px;
   clip-path: polygon(100% 0, 100% 78%, 50% 100%, 0 78%, 0 0);
 }
+.opacityOff {
+  animation: opacityOff 1.5s ease 1;
+}
+@keyframes opacityOff {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes animationLogo {
   0% {
     transform: translateX(-100%);
@@ -338,7 +349,7 @@
   50% {
     transform: translateX(0);
     opacity: 1;
-    filter: drop-shadow(2px -2px 15px white);
+    filter: drop-shadow(2px -2px 25px white);
   }
   100% {
     transform: translateX(100%);
