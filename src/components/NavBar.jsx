@@ -33,7 +33,7 @@ function NavBar({
     document.querySelector(".openedHamburger").style.display = "flex";
   }
   return (
-    <div className="navBar">
+    <div className="navBar opacityOff">
       <div className="leftSideNav">
         <Image
           img={logo}
@@ -138,7 +138,6 @@ NavBar.propTypes = {
   language: PropTypes.object,
   setLanguage: PropTypes.func,
   handleCloseMenu: PropTypes.func,
-  handleOpacity: PropTypes.func,
 };
 
 export default NavBar;

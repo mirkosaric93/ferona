@@ -36,8 +36,8 @@ export default function Galery({ handleCloseMenu, language }) {
 
   return (
     <>
-      <p className="title">{language.gallery}</p>
-      <div className="galeryContainer" onClick={handleCloseMenu}>
+      <p className="title opacityOff">{language.gallery}</p>
+      <div className="galeryContainer opacityOff" onClick={handleCloseMenu}>
         <div className="galeryImages">
           <button
             id="leftBtn"

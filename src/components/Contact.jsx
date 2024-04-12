@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 export default function Contact({ language, handleCloseMenu }) {
   return (
     <>
-      <p className="title">{language.contact}</p>
-      <div className="contactContainer" onClick={handleCloseMenu}>
+      <p className="title opacityOff">{language.contact}</p>
+      <div className="contactContainer opacityOff" onClick={handleCloseMenu}>
         <div className="ownerContact">
           <div>
             {/* <p>Telefon:</p> */}

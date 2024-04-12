@@ -6,9 +6,9 @@ import PropTypes from "prop-types";
 function HomeImage({ language, handleCloseMenu }) {
   return (
     <>
-      <p className="title">{language.home}</p>
+      <p className="title opacityOff">{language.home}</p>
       <div
-        className="coverImages"
+        className="coverImages opacityOff"
         onClick={handleCloseMenu}
       >
         <Image img={logo} alt="Central Logo" styledClass="centralLogo" />
