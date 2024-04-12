@@ -117,13 +117,13 @@ function NavBar({
         <p className="closeMenu" onClick={handleCloseMenu}>
           X
         </p>
-        <ButtonNav styleName="hamburgerBtn" handleBtn={handleHomeBtn}>
+        <ButtonNav styleName="hamburgerBtn" handleBtn={handleHomeBtn} handleCloseMenu={handleCloseMenu}>
           {language.home}
         </ButtonNav>
-        <ButtonNav styleName="hamburgerBtn" handleBtn={handleGaleryBtn}>
+        <ButtonNav styleName="hamburgerBtn" handleBtn={handleGaleryBtn} handleCloseMenu={handleCloseMenu}>
           {language.gallery}
         </ButtonNav>
-        <ButtonNav styleName="hamburgerBtn" handleBtn={handleContactBtn}>
+        <ButtonNav styleName="hamburgerBtn" handleBtn={handleContactBtn} handleCloseMenu={handleCloseMenu}>
           {language.contact}
         </ButtonNav>
       </div>
